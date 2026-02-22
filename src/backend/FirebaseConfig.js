@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCJGZUwpHEmIQPwbqOSJKq6oPvu1Z8Fl4U",
-  authDomain: "innovators-hub-music-8b2e3.firebaseapp.com",
-  projectId: "innovators-hub-music-8b2e3",
-  storageBucket: "innovators-hub-music-8b2e3.firebasestorage.app",
-  messagingSenderId: "757359115938",
-  appId: "1:757359115938:web:099f45c52bdf42423be1fb"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
